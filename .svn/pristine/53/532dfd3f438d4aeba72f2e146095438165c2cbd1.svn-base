@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00AD0EDC4CEABC7248520B0E9C177E19 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4542DFF4010B6407E79A19F117358252 /* PopupDialogButton.swift */; };
+		01DFEB716BFA2E7092A900AB17CC2DF8 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39826249715F1B41BC742E09EF0646 /* PopupDialogContainerView.swift */; };
+		0DBAF29DE8294359444A3C1B97B7A0F0 /* Pods-SmartExchangeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBBA4A5E105684087CA272DF55E4DC5D /* Pods-SmartExchangeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		137D8AB40F55118C14D5904D0D5B8D24 /* Pods-SmartExchangeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB61519854D4C8EFB0CF07F3E34EBEC /* Pods-SmartExchangeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ABD4CFDCC4D4831BE3C7897BAE0A8E9 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B55D066D7DB273DBA1525F4980A411 /* PopupDialogOverlayView.swift */; };
+		1E623812FC5C55162BE0619C6E83EE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		1E67FB834B1A2B685AC5E938C4D14E4A /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7741D87B32344CCCD83711F6D810803 /* PopupDialogDefaultView.swift */; };
+		220853A136ADF9C68290A98AE0915BF2 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A046053DD7D89514FF070D57DCD1A9 /* UIView+Animations.swift */; };
+		23C27D33273E4A2EE18F3335CC603C57 /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D38A42DD00D00B4D28C5ADC2F5C870 /* UIImageView+Calculations.swift */; };
+		29502A37D5A223674A88303E436ECAB0 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF32E507775747A5DB707EAD6795E8 /* FXBlurView.m */; };
+		2A07DA74AE761678ACBEBD1E23855935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		404CBF8402294B0545199ECCE26F6261 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5706B45A8EB808388F789211368D9A0 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 920BE3510424D3B318B27D18ED3780B7 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E6A4302B13F2C13D0795B0916C0438 /* Pods-SmartExchange-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 401E398611F619A1E3CA4C8C26AF3378 /* Pods-SmartExchange-dummy.m */; };
+		4444ED3EE2B43C2C4B142A12F2FDDEFA /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69685D84CBD7DEA0423A5A3C8C7DF6FA /* PresentationManager.swift */; };
+		472C49B8E3599837A7DBCBFA4AFB110A /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3D343CED7FF9B078704C0A8D3E412 /* TransitionAnimator.swift */; };
+		4D970731D115A102D387CE79B360A146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		5A75CB205729C3F349720EFB80C8A9CD /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6575B6C2BB4CA0AA8057BF0BD9B1293 /* TZStackViewDistribution.swift */; };
+		5CD8E837901A40CA9E044E983A256BAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		5DFFDBCE67E14B1B4B52A12E94F05732 /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9E36ED8015E4AE2E88CCB02FA09D67 /* PopupDialog-dummy.m */; };
+		66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1CAEEEEA22A0F6E2EEE8DEBE34DCE5 /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F25079BC04615812D5D3E8DD5BB716D5 /* JPSVolumeButtonHandler-dummy.m */; };
+		78B853D7530319F425C8B7FD41DD6A82 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81CAE1810EFF0EF464D7A811F3D24E6 /* PopupDialogDefaultButtons.swift */; };
+		8233B970DF692F0992BF413CC80E0F78 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */; };
+		84A542C2B60FBEDE2F32389366F0B4D7 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E80042957272CFF379778CC13407B3 /* UIViewController+Visibility.swift */; };
+		9BB2CC4DBD72706B7E449C8D4DBC0568 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FDAC16F98EA60A26040253DC5E5B5A /* PopupDialog+Keyboard.swift */; };
+		9E88753175315B92F838A075C91FE003 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49899428A30758F9F1323FC23EBF2493 /* PopupDialog.swift */; };
+		A09E8A7A11837B71CB950524E184440D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */; };
+		AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A4324315D3070CB26CAA778E51A352 /* JPSVolumeButtonHandler.m */; };
+		AE844A409D2A660DF914FBFE3E4AB487 /* Pods-SmartExchangeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46541DB0FC501B7C0BDE8B2C85317D23 /* Pods-SmartExchangeUITests-dummy.m */; };
+		B182AA6FF681CE94A6068DAACB22814A /* Pods-SmartExchange-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87451362CCCDBE13CBD949C2D07E27A4 /* Pods-SmartExchange-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF1473DB00FEA668E60D49BEC4994C39 /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43D2843A9AFE25D11EB903AB48DCCC /* TZStackViewAlignment.swift */; };
+		C5A7D6F5A67DC72A0FB8C8F2727C0E56 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E390701793BB4B6CEE0343C2BBCE50 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D03449341DAA088463A45CB5BD6DB9 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1BD578CD2AA006C63B637B2872D798 /* TransitionAnimations.swift */; };
+		D98EF20C5DF50A8747B6D66CC8A13982 /* TZSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB62BE0008EB362F6E91D365D1221B7 /* TZSpacerView.swift */; };
+		D997519F706D56EB70A216E4C6F185CC /* TZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF331CCD10F631001E3B92DDCF8B0B6D /* TZStackView.swift */; };
+		E297F0F10FC639D743EDAF0E0C2BCE52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814508258D11E63467099BB0919FA4D /* Foundation.framework */; };
+		E56D413955FDE7A948B7D39677A82AA6 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD22A0AFE193A16F67A9C458AA7C40F /* InteractiveTransition.swift */; };
+		E80F98B78215120902BC9457AFE02760 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA74D1EFA5993BDC58E97CBB3617E3C /* PresentationController.swift */; };
+		EA8113290C8366E27B0BC17CBDE5BA3A /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBACCC2CEB95EF67F767A9798DE3EF0 /* PopupDialogDefaultViewController.swift */; };
+		EAFF8CCEE52A2E608021FD18E736E171 /* Pods-SmartExchangeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A31A0B2FAE2B646EFEAAD6D8213445 /* Pods-SmartExchangeTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		566BBE7A520072539A9BCE609EC214CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4892EBD09D0A3E21D7DE9541211C63EB;
+			remoteInfo = PopupDialog;
+		};
+		8228335CB832020D18D4C7E2D619FBDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49442B834B6726B7A1387CC4B226F143;
+			remoteInfo = JPSVolumeButtonHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E3D343CED7FF9B078704C0A8D3E412 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		073B8EAC53AE4BEBDA6A2AC42EEDB6CB /* Pods-SmartExchangeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchangeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0DE66B406A98E58CC1ABFDCEF984C7EB /* Pods-SmartExchangeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartExchangeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		146A1A993D57985BA8CA4B70F718B834 /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		158AF63822E1121706C87DC868B3A437 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9D6EDF5BBEB969BBB62EC7468286F9 /* Pods_SmartExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartExchange.framework; path = "Pods-SmartExchange.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23AF32E507775747A5DB707EAD6795E8 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = PopupDialog/Classes/FXBlurView.m; sourceTree = "<group>"; };
+		2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		24D5A3AC33B452F089E158C3F0524FD3 /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
+		32B33C6ED56B210906B9C99A58504EE8 /* Pods-SmartExchangeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartExchangeTests.modulemap"; sourceTree = "<group>"; };
+		34B132D985385EAC992C384D22C1FAF1 /* Pods-SmartExchangeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartExchangeUITests.modulemap"; sourceTree = "<group>"; };
+		401E398611F619A1E3CA4C8C26AF3378 /* Pods-SmartExchange-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartExchange-dummy.m"; sourceTree = "<group>"; };
+		4542DFF4010B6407E79A19F117358252 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		46541DB0FC501B7C0BDE8B2C85317D23 /* Pods-SmartExchangeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartExchangeUITests-dummy.m"; sourceTree = "<group>"; };
+		49899428A30758F9F1323FC23EBF2493 /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
+		4989D8AC5D5FA647C2B62BF6C1EC5D63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C28E563AC0419450AA47CC7760E66D2 /* Pods-SmartExchangeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartExchangeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FD22A0AFE193A16F67A9C458AA7C40F /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
+		570C2A75E180062028EA5BB675F3A978 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1CA698104114DCC9BB87A1713FCB6 /* Pods_SmartExchangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartExchangeUITests.framework; path = "Pods-SmartExchangeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B55D066D7DB273DBA1525F4980A411 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		64926AFF4BA0C2FC66BD9CA919C465B0 /* Pods-SmartExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchange.release.xcconfig"; sourceTree = "<group>"; };
+		64FDAC16F98EA60A26040253DC5E5B5A /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		69685D84CBD7DEA0423A5A3C8C7DF6FA /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
+		6DBC6CD9B438B19D3A705F005C754DBC /* Pods-SmartExchange-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchange-frameworks.sh"; sourceTree = "<group>"; };
+		6EB62BE0008EB362F6E91D365D1221B7 /* TZSpacerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZSpacerView.swift; path = PopupDialog/Classes/TZStackView/TZSpacerView.swift; sourceTree = "<group>"; };
+		72D6ECA4DCCE05B262E6751016A48522 /* Pods-SmartExchangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75E390701793BB4B6CEE0343C2BBCE50 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
+		772E43532955631410165137CEB9671F /* Pods-SmartExchange-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartExchange-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7881E89C42EC4F3546E70C7EAF216681 /* Pods-SmartExchangeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchangeTests-frameworks.sh"; sourceTree = "<group>"; };
+		78EC9D3F43E01A4ADE66966F6F61E5F2 /* Pods-SmartExchangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchangeTests.release.xcconfig"; sourceTree = "<group>"; };
+		79BCF25AD803F86F68874E8BA405F2FA /* Pods-SmartExchange-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchange-resources.sh"; sourceTree = "<group>"; };
+		835CDB3B70BC75E30BF992602DFAD627 /* Pods-SmartExchange-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartExchange-acknowledgements.plist"; sourceTree = "<group>"; };
+		850556B8482614AED20D2274BE7E7508 /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
+		87451362CCCDBE13CBD949C2D07E27A4 /* Pods-SmartExchange-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartExchange-umbrella.h"; sourceTree = "<group>"; };
+		8814508258D11E63467099BB0919FA4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		88A31A0B2FAE2B646EFEAAD6D8213445 /* Pods-SmartExchangeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartExchangeTests-dummy.m"; sourceTree = "<group>"; };
+		8907FFEBC653D7C090E2F23C0A774ECC /* Pods-SmartExchangeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchangeTests-resources.sh"; sourceTree = "<group>"; };
+		8DBACCC2CEB95EF67F767A9798DE3EF0 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		8E39826249715F1B41BC742E09EF0646 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		920BE3510424D3B318B27D18ED3780B7 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E80042957272CFF379778CC13407B3 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		996B483D82B33FA597D7794422F3EC3C /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JPSVolumeButtonHandler.framework; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A43D2843A9AFE25D11EB903AB48DCCC /* TZStackViewAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackViewAlignment.swift; path = PopupDialog/Classes/TZStackView/TZStackViewAlignment.swift; sourceTree = "<group>"; };
+		9B1E2525EA9C78A02CE6214CEEE2A456 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		9F37BC147D17487003D4659494C36853 /* Pods_SmartExchangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartExchangeTests.framework; path = "Pods-SmartExchangeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A604E99F18E7822C3340D54C6FE96DAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62BF504FFAC790416A84570924B7C65 /* Pods-SmartExchange.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartExchange.modulemap"; sourceTree = "<group>"; };
+		A6575B6C2BB4CA0AA8057BF0BD9B1293 /* TZStackViewDistribution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackViewDistribution.swift; path = PopupDialog/Classes/TZStackView/TZStackViewDistribution.swift; sourceTree = "<group>"; };
+		A898172688FC06BF3A246A27BA7BDB03 /* Pods-SmartExchangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchangeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABB61519854D4C8EFB0CF07F3E34EBEC /* Pods-SmartExchangeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartExchangeUITests-umbrella.h"; sourceTree = "<group>"; };
+		AD151364D9BDA1570E55C93EBA1086F7 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
+		B1C126EAE3EFB037B9D411A4EA194BB2 /* Pods-SmartExchangeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartExchangeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B7B3F24BF10EE65F037E938C44C6EDBE /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
+		BD08C6B926FA764EA4C6444D15E650F6 /* Pods-SmartExchangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD1CAEEEEA22A0F6E2EEE8DEBE34DCE5 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
+		BE9E36ED8015E4AE2E88CCB02FA09D67 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
+		C2A4324315D3070CB26CAA778E51A352 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
+		C4D38A42DD00D00B4D28C5ADC2F5C870 /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
+		C5706B45A8EB808388F789211368D9A0 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = PopupDialog/Classes/FXBlurView.h; sourceTree = "<group>"; };
+		C7741D87B32344CCCD83711F6D810803 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
+		C8D8723735AC294E659BED70739CB160 /* Pods-SmartExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartExchange.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8A7B9B0890938BDCC57418BFE3C91A /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF331CCD10F631001E3B92DDCF8B0B6D /* TZStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackView.swift; path = PopupDialog/Classes/TZStackView/TZStackView.swift; sourceTree = "<group>"; };
+		D612C6D8B2BCA8C4E1EBC6F5D9E80F9D /* Pods-SmartExchangeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartExchangeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D9166CBAB57615D3A362A6FB8D3A9287 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		DA1BD578CD2AA006C63B637B2872D798 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		E2A046053DD7D89514FF070D57DCD1A9 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		F25079BC04615812D5D3E8DD5BB716D5 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
+		F4AB26758A9BF824031206A035519491 /* Pods-SmartExchangeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartExchangeUITests-resources.sh"; sourceTree = "<group>"; };
+		F81CAE1810EFF0EF464D7A811F3D24E6 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		FAA74D1EFA5993BDC58E97CBB3617E3C /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		FBBA4A5E105684087CA272DF55E4DC5D /* Pods-SmartExchangeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartExchangeTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143F8B4A0866BC7079C47E8218C141AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD8E837901A40CA9E044E983A256BAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E009CDC0435C90150F3422345907A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8233B970DF692F0992BF413CC80E0F78 /* AVFoundation.framework in Frameworks */,
+				2A07DA74AE761678ACBEBD1E23855935 /* Foundation.framework in Frameworks */,
+				A09E8A7A11837B71CB950524E184440D /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572A519DBC905D97AFAAC516C23A83E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D970731D115A102D387CE79B360A146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A6783E02F8051A77FA9B9C2762AEE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E297F0F10FC639D743EDAF0E0C2BCE52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B996CAE13F2FF939AEA398CC26EB635D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E623812FC5C55162BE0619C6E83EE02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F508B82618BB1608B353CE54D8C3F9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13E94D6EDA35D7FE8ECB0299D815FC22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				158AF63822E1121706C87DC868B3A437 /* Info.plist */,
+				AD151364D9BDA1570E55C93EBA1086F7 /* JPSVolumeButtonHandler.modulemap */,
+				24D5A3AC33B452F089E158C3F0524FD3 /* JPSVolumeButtonHandler.xcconfig */,
+				F25079BC04615812D5D3E8DD5BB716D5 /* JPSVolumeButtonHandler-dummy.m */,
+				850556B8482614AED20D2274BE7E7508 /* JPSVolumeButtonHandler-prefix.pch */,
+				920BE3510424D3B318B27D18ED3780B7 /* JPSVolumeButtonHandler-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JPSVolumeButtonHandler";
+			sourceTree = "<group>";
+		};
+		357656EEDFB1C163263BA5A02FA36F14 /* PopupDialog */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B45A8EB808388F789211368D9A0 /* FXBlurView.h */,
+				23AF32E507775747A5DB707EAD6795E8 /* FXBlurView.m */,
+				4FD22A0AFE193A16F67A9C458AA7C40F /* InteractiveTransition.swift */,
+				49899428A30758F9F1323FC23EBF2493 /* PopupDialog.swift */,
+				64FDAC16F98EA60A26040253DC5E5B5A /* PopupDialog+Keyboard.swift */,
+				4542DFF4010B6407E79A19F117358252 /* PopupDialogButton.swift */,
+				8E39826249715F1B41BC742E09EF0646 /* PopupDialogContainerView.swift */,
+				F81CAE1810EFF0EF464D7A811F3D24E6 /* PopupDialogDefaultButtons.swift */,
+				C7741D87B32344CCCD83711F6D810803 /* PopupDialogDefaultView.swift */,
+				8DBACCC2CEB95EF67F767A9798DE3EF0 /* PopupDialogDefaultViewController.swift */,
+				60B55D066D7DB273DBA1525F4980A411 /* PopupDialogOverlayView.swift */,
+				FAA74D1EFA5993BDC58E97CBB3617E3C /* PresentationController.swift */,
+				69685D84CBD7DEA0423A5A3C8C7DF6FA /* PresentationManager.swift */,
+				DA1BD578CD2AA006C63B637B2872D798 /* TransitionAnimations.swift */,
+				05E3D343CED7FF9B078704C0A8D3E412 /* TransitionAnimator.swift */,
+				6EB62BE0008EB362F6E91D365D1221B7 /* TZSpacerView.swift */,
+				CF331CCD10F631001E3B92DDCF8B0B6D /* TZStackView.swift */,
+				9A43D2843A9AFE25D11EB903AB48DCCC /* TZStackViewAlignment.swift */,
+				A6575B6C2BB4CA0AA8057BF0BD9B1293 /* TZStackViewDistribution.swift */,
+				C4D38A42DD00D00B4D28C5ADC2F5C870 /* UIImageView+Calculations.swift */,
+				E2A046053DD7D89514FF070D57DCD1A9 /* UIView+Animations.swift */,
+				94E80042957272CFF379778CC13407B3 /* UIViewController+Visibility.swift */,
+				AC64A2E24CEE65BFEC78D4BD55F4BEDF /* Support Files */,
+			);
+			name = PopupDialog;
+			path = PopupDialog;
+			sourceTree = "<group>";
+		};
+		362FBDDC192BFD20EFCABF4B785F91C1 /* Pods-SmartExchange */ = {
+			isa = PBXGroup;
+			children = (
+				9B1E2525EA9C78A02CE6214CEEE2A456 /* Info.plist */,
+				A62BF504FFAC790416A84570924B7C65 /* Pods-SmartExchange.modulemap */,
+				772E43532955631410165137CEB9671F /* Pods-SmartExchange-acknowledgements.markdown */,
+				835CDB3B70BC75E30BF992602DFAD627 /* Pods-SmartExchange-acknowledgements.plist */,
+				401E398611F619A1E3CA4C8C26AF3378 /* Pods-SmartExchange-dummy.m */,
+				6DBC6CD9B438B19D3A705F005C754DBC /* Pods-SmartExchange-frameworks.sh */,
+				79BCF25AD803F86F68874E8BA405F2FA /* Pods-SmartExchange-resources.sh */,
+				87451362CCCDBE13CBD949C2D07E27A4 /* Pods-SmartExchange-umbrella.h */,
+				C8D8723735AC294E659BED70739CB160 /* Pods-SmartExchange.debug.xcconfig */,
+				64926AFF4BA0C2FC66BD9CA919C465B0 /* Pods-SmartExchange.release.xcconfig */,
+			);
+			name = "Pods-SmartExchange";
+			path = "Target Support Files/Pods-SmartExchange";
+			sourceTree = "<group>";
+		};
+		3DFEC9E7EFAF549EADA6E9046B3F190D /* Pods-SmartExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A604E99F18E7822C3340D54C6FE96DAF /* Info.plist */,
+				32B33C6ED56B210906B9C99A58504EE8 /* Pods-SmartExchangeTests.modulemap */,
+				4C28E563AC0419450AA47CC7760E66D2 /* Pods-SmartExchangeTests-acknowledgements.markdown */,
+				0DE66B406A98E58CC1ABFDCEF984C7EB /* Pods-SmartExchangeTests-acknowledgements.plist */,
+				88A31A0B2FAE2B646EFEAAD6D8213445 /* Pods-SmartExchangeTests-dummy.m */,
+				7881E89C42EC4F3546E70C7EAF216681 /* Pods-SmartExchangeTests-frameworks.sh */,
+				8907FFEBC653D7C090E2F23C0A774ECC /* Pods-SmartExchangeTests-resources.sh */,
+				FBBA4A5E105684087CA272DF55E4DC5D /* Pods-SmartExchangeTests-umbrella.h */,
+				72D6ECA4DCCE05B262E6751016A48522 /* Pods-SmartExchangeTests.debug.xcconfig */,
+				78EC9D3F43E01A4ADE66966F6F61E5F2 /* Pods-SmartExchangeTests.release.xcconfig */,
+			);
+			name = "Pods-SmartExchangeTests";
+			path = "Target Support Files/Pods-SmartExchangeTests";
+			sourceTree = "<group>";
+		};
+		45F508B82618BB1608B353CE54D8C3F9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2489FF4AE3997E72FF93FF763CB10C6B /* AVFoundation.framework */,
+				8814508258D11E63467099BB0919FA4D /* Foundation.framework */,
+				9B31D572498265F16CE3292E541D77F4 /* MediaPlayer.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D160C29A873585E279D753696E205B0 /* JPSVolumeButtonHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CAEEEEA22A0F6E2EEE8DEBE34DCE5 /* JPSVolumeButtonHandler.h */,
+				C2A4324315D3070CB26CAA778E51A352 /* JPSVolumeButtonHandler.m */,
+				13E94D6EDA35D7FE8ECB0299D815FC22 /* Support Files */,
+			);
+			name = JPSVolumeButtonHandler;
+			path = JPSVolumeButtonHandler;
+			sourceTree = "<group>";
+		};
+		73A6F328A520BDBB20346EAF1C6F36B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996B483D82B33FA597D7794422F3EC3C /* JPSVolumeButtonHandler.framework */,
+				1B9D6EDF5BBEB969BBB62EC7468286F9 /* Pods_SmartExchange.framework */,
+				9F37BC147D17487003D4659494C36853 /* Pods_SmartExchangeTests.framework */,
+				5AA1CA698104114DCC9BB87A1713FCB6 /* Pods_SmartExchangeUITests.framework */,
+				CE8A7B9B0890938BDCC57418BFE3C91A /* PopupDialog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				C69F40C6C83B43E17481CB04214490E2 /* Pods */,
+				73A6F328A520BDBB20346EAF1C6F36B8 /* Products */,
+				A93B71C5668BD62769187DD7E3C0AFF9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		891F7D37E0D09C8EF3E96E49E9DA01D4 /* Pods-SmartExchangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4989D8AC5D5FA647C2B62BF6C1EC5D63 /* Info.plist */,
+				34B132D985385EAC992C384D22C1FAF1 /* Pods-SmartExchangeUITests.modulemap */,
+				B1C126EAE3EFB037B9D411A4EA194BB2 /* Pods-SmartExchangeUITests-acknowledgements.markdown */,
+				D612C6D8B2BCA8C4E1EBC6F5D9E80F9D /* Pods-SmartExchangeUITests-acknowledgements.plist */,
+				46541DB0FC501B7C0BDE8B2C85317D23 /* Pods-SmartExchangeUITests-dummy.m */,
+				073B8EAC53AE4BEBDA6A2AC42EEDB6CB /* Pods-SmartExchangeUITests-frameworks.sh */,
+				F4AB26758A9BF824031206A035519491 /* Pods-SmartExchangeUITests-resources.sh */,
+				ABB61519854D4C8EFB0CF07F3E34EBEC /* Pods-SmartExchangeUITests-umbrella.h */,
+				BD08C6B926FA764EA4C6444D15E650F6 /* Pods-SmartExchangeUITests.debug.xcconfig */,
+				A898172688FC06BF3A246A27BA7BDB03 /* Pods-SmartExchangeUITests.release.xcconfig */,
+			);
+			name = "Pods-SmartExchangeUITests";
+			path = "Target Support Files/Pods-SmartExchangeUITests";
+			sourceTree = "<group>";
+		};
+		A93B71C5668BD62769187DD7E3C0AFF9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				362FBDDC192BFD20EFCABF4B785F91C1 /* Pods-SmartExchange */,
+				3DFEC9E7EFAF549EADA6E9046B3F190D /* Pods-SmartExchangeTests */,
+				891F7D37E0D09C8EF3E96E49E9DA01D4 /* Pods-SmartExchangeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AC64A2E24CEE65BFEC78D4BD55F4BEDF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				570C2A75E180062028EA5BB675F3A978 /* Info.plist */,
+				D9166CBAB57615D3A362A6FB8D3A9287 /* PopupDialog.modulemap */,
+				146A1A993D57985BA8CA4B70F718B834 /* PopupDialog.xcconfig */,
+				BE9E36ED8015E4AE2E88CCB02FA09D67 /* PopupDialog-dummy.m */,
+				B7B3F24BF10EE65F037E938C44C6EDBE /* PopupDialog-prefix.pch */,
+				75E390701793BB4B6CEE0343C2BBCE50 /* PopupDialog-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopupDialog";
+			sourceTree = "<group>";
+		};
+		C69F40C6C83B43E17481CB04214490E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D160C29A873585E279D753696E205B0 /* JPSVolumeButtonHandler */,
+				357656EEDFB1C163263BA5A02FA36F14 /* PopupDialog */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2683198EB334B448D2621FC55F53FC2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404CBF8402294B0545199ECCE26F6261 /* FXBlurView.h in Headers */,
+				C5A7D6F5A67DC72A0FB8C8F2727C0E56 /* PopupDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D1345B0BAFB94985AC3169151037E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B182AA6FF681CE94A6068DAACB22814A /* Pods-SmartExchange-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DA24CA974152BEBDB665F7A897E92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137D8AB40F55118C14D5904D0D5B8D24 /* Pods-SmartExchangeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0442FC226857F95256ACDB8441DA0AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBAF29DE8294359444A3C1B97B7A0F0 /* Pods-SmartExchangeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C014AB2E8A33EA9FB8322FC4C79F43E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */,
+				66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F66366321E49177D5D941E0384A049A /* Pods-SmartExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949009288AC51D5776B43E9D66E069F4 /* Build configuration list for PBXNativeTarget "Pods-SmartExchangeTests" */;
+			buildPhases = (
+				917558ED92E2FA868DEF0D7BFEA6EF38 /* Sources */,
+				A8A6783E02F8051A77FA9B9C2762AEE9 /* Frameworks */,
+				B0442FC226857F95256ACDB8441DA0AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SmartExchangeTests";
+			productName = "Pods-SmartExchangeTests";
+			productReference = 9F37BC147D17487003D4659494C36853 /* Pods_SmartExchangeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		242B0F5DB125DCE9578A8B5AD73A72ED /* Pods-SmartExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F556D66CB92CD8C0D947CBEDBD728C48 /* Build configuration list for PBXNativeTarget "Pods-SmartExchange" */;
+			buildPhases = (
+				38A32A0471C0E8E3FABB5C7383FED63D /* Sources */,
+				B996CAE13F2FF939AEA398CC26EB635D /* Frameworks */,
+				38D1345B0BAFB94985AC3169151037E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D6FCBAB853B56E48B6BA502B16C558C /* PBXTargetDependency */,
+				163B5C25A1EDA22DEE7324C6EBB5ED00 /* PBXTargetDependency */,
+			);
+			name = "Pods-SmartExchange";
+			productName = "Pods-SmartExchange";
+			productReference = 1B9D6EDF5BBEB969BBB62EC7468286F9 /* Pods_SmartExchange.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4892EBD09D0A3E21D7DE9541211C63EB /* PopupDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68AA2311647F436F4C7240D6CCF0F28A /* Build configuration list for PBXNativeTarget "PopupDialog" */;
+			buildPhases = (
+				67C8513A5BD3ED210BE207D31535C888 /* Sources */,
+				143F8B4A0866BC7079C47E8218C141AB /* Frameworks */,
+				2683198EB334B448D2621FC55F53FC2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopupDialog;
+			productName = PopupDialog;
+			productReference = CE8A7B9B0890938BDCC57418BFE3C91A /* PopupDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD3C061049B7E782E960FE19C3DF454 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */;
+			buildPhases = (
+				F41945D9C47255B774FCF0FD1D5867B3 /* Sources */,
+				3E009CDC0435C90150F3422345907A02 /* Frameworks */,
+				C014AB2E8A33EA9FB8322FC4C79F43E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPSVolumeButtonHandler;
+			productName = JPSVolumeButtonHandler;
+			productReference = 996B483D82B33FA597D7794422F3EC3C /* JPSVolumeButtonHandler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFEBACC873AF677DF67D548D89B5B3CA /* Pods-SmartExchangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DB4906FE3E1BB9A45F313A8A41613B0 /* Build configuration list for PBXNativeTarget "Pods-SmartExchangeUITests" */;
+			buildPhases = (
+				578F604DDCF6F932080C9A44672E08C9 /* Sources */,
+				572A519DBC905D97AFAAC516C23A83E5 /* Frameworks */,
+				661DA24CA974152BEBDB665F7A897E92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SmartExchangeUITests";
+			productName = "Pods-SmartExchangeUITests";
+			productReference = 5AA1CA698104114DCC9BB87A1713FCB6 /* Pods_SmartExchangeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 73A6F328A520BDBB20346EAF1C6F36B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */,
+				242B0F5DB125DCE9578A8B5AD73A72ED /* Pods-SmartExchange */,
+				0F66366321E49177D5D941E0384A049A /* Pods-SmartExchangeTests */,
+				DFEBACC873AF677DF67D548D89B5B3CA /* Pods-SmartExchangeUITests */,
+				4892EBD09D0A3E21D7DE9541211C63EB /* PopupDialog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38A32A0471C0E8E3FABB5C7383FED63D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E6A4302B13F2C13D0795B0916C0438 /* Pods-SmartExchange-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578F604DDCF6F932080C9A44672E08C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE844A409D2A660DF914FBFE3E4AB487 /* Pods-SmartExchangeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C8513A5BD3ED210BE207D31535C888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29502A37D5A223674A88303E436ECAB0 /* FXBlurView.m in Sources */,
+				E56D413955FDE7A948B7D39677A82AA6 /* InteractiveTransition.swift in Sources */,
+				9BB2CC4DBD72706B7E449C8D4DBC0568 /* PopupDialog+Keyboard.swift in Sources */,
+				5DFFDBCE67E14B1B4B52A12E94F05732 /* PopupDialog-dummy.m in Sources */,
+				9E88753175315B92F838A075C91FE003 /* PopupDialog.swift in Sources */,
+				00AD0EDC4CEABC7248520B0E9C177E19 /* PopupDialogButton.swift in Sources */,
+				01DFEB716BFA2E7092A900AB17CC2DF8 /* PopupDialogContainerView.swift in Sources */,
+				78B853D7530319F425C8B7FD41DD6A82 /* PopupDialogDefaultButtons.swift in Sources */,
+				1E67FB834B1A2B685AC5E938C4D14E4A /* PopupDialogDefaultView.swift in Sources */,
+				EA8113290C8366E27B0BC17CBDE5BA3A /* PopupDialogDefaultViewController.swift in Sources */,
+				1ABD4CFDCC4D4831BE3C7897BAE0A8E9 /* PopupDialogOverlayView.swift in Sources */,
+				E80F98B78215120902BC9457AFE02760 /* PresentationController.swift in Sources */,
+				4444ED3EE2B43C2C4B142A12F2FDDEFA /* PresentationManager.swift in Sources */,
+				D6D03449341DAA088463A45CB5BD6DB9 /* TransitionAnimations.swift in Sources */,
+				472C49B8E3599837A7DBCBFA4AFB110A /* TransitionAnimator.swift in Sources */,
+				D98EF20C5DF50A8747B6D66CC8A13982 /* TZSpacerView.swift in Sources */,
+				D997519F706D56EB70A216E4C6F185CC /* TZStackView.swift in Sources */,
+				BF1473DB00FEA668E60D49BEC4994C39 /* TZStackViewAlignment.swift in Sources */,
+				5A75CB205729C3F349720EFB80C8A9CD /* TZStackViewDistribution.swift in Sources */,
+				23C27D33273E4A2EE18F3335CC603C57 /* UIImageView+Calculations.swift in Sources */,
+				220853A136ADF9C68290A98AE0915BF2 /* UIView+Animations.swift in Sources */,
+				84A542C2B60FBEDE2F32389366F0B4D7 /* UIViewController+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917558ED92E2FA868DEF0D7BFEA6EF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFF8CCEE52A2E608021FD18E736E171 /* Pods-SmartExchangeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41945D9C47255B774FCF0FD1D5867B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */,
+				AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		163B5C25A1EDA22DEE7324C6EBB5ED00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopupDialog;
+			target = 4892EBD09D0A3E21D7DE9541211C63EB /* PopupDialog */;
+			targetProxy = 566BBE7A520072539A9BCE609EC214CF /* PBXContainerItemProxy */;
+		};
+		6D6FCBAB853B56E48B6BA502B16C558C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JPSVolumeButtonHandler;
+			target = 49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */;
+			targetProxy = 8228335CB832020D18D4C7E2D619FBDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0307E2874F95373C69DD3676D7C8B3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146A1A993D57985BA8CA4B70F718B834 /* PopupDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0FFE52730ABE733475BA70B2CC30D137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D5A3AC33B452F089E158C3F0524FD3 /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33729307F59CAA7C50D1B43C876AEE90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D6ECA4DCCE05B262E6751016A48522 /* Pods-SmartExchangeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchangeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchangeTests/Pods-SmartExchangeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchangeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C6C862A0E6D2511A07211EBCF680CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64926AFF4BA0C2FC66BD9CA919C465B0 /* Pods-SmartExchange.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchange/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchange/Pods-SmartExchange.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchange;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A103C4B4A4A32F0E0704EABD7729695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD08C6B926FA764EA4C6444D15E650F6 /* Pods-SmartExchangeUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchangeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchangeUITests/Pods-SmartExchangeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchangeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE94A9DB0960576967E7C615C06C2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146A1A993D57985BA8CA4B70F718B834 /* PopupDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		768D7683117EDB66082C07BA83EA1833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D8723735AC294E659BED70739CB160 /* Pods-SmartExchange.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchange/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchange/Pods-SmartExchange.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchange;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FCC4D1C325CE13EADA0759F220AB7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A898172688FC06BF3A246A27BA7BDB03 /* Pods-SmartExchangeUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchangeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchangeUITests/Pods-SmartExchangeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchangeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		830983283CF187C2F3154B28C3341375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EC9D3F43E01A4ADE66966F6F61E5F2 /* Pods-SmartExchangeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartExchangeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartExchangeTests/Pods-SmartExchangeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartExchangeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF0B666323E42FAB4674A69A1153C3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D5A3AC33B452F089E158C3F0524FD3 /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DB4906FE3E1BB9A45F313A8A41613B0 /* Build configuration list for PBXNativeTarget "Pods-SmartExchangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A103C4B4A4A32F0E0704EABD7729695 /* Debug */,
+				7FCC4D1C325CE13EADA0759F220AB7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68AA2311647F436F4C7240D6CCF0F28A /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0307E2874F95373C69DD3676D7C8B3E4 /* Debug */,
+				4BE94A9DB0960576967E7C615C06C2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949009288AC51D5776B43E9D66E069F4 /* Build configuration list for PBXNativeTarget "Pods-SmartExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33729307F59CAA7C50D1B43C876AEE90 /* Debug */,
+				830983283CF187C2F3154B28C3341375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD3C061049B7E782E960FE19C3DF454 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFE52730ABE733475BA70B2CC30D137 /* Debug */,
+				AF0B666323E42FAB4674A69A1153C3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F556D66CB92CD8C0D947CBEDBD728C48 /* Build configuration list for PBXNativeTarget "Pods-SmartExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768D7683117EDB66082C07BA83EA1833 /* Debug */,
+				3C6C862A0E6D2511A07211EBCF680CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

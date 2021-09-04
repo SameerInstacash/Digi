@@ -1,0 +1,116 @@
+//
+//  CameraViewController.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 21/03/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+
+class CameraViewController: UIViewController {
+
+    @IBOutlet weak var CameraClickedText: UILabel!
+    let captureSession = AVCaptureSession()
+    var previewLayer : AVCaptureVideoPreviewLayer?
+    
+    // If we find a device we'll store it here for later use
+    var captureDevice : AVCaptureDevice?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        CameraClickedText.isHidden = true
+        captureSession.sessionPreset = AVCaptureSessionPresetHigh
+        
+        let devices = AVCaptureDevice.devices()
+        
+        // Loop through all the capture devices on this phone
+        for device in devices! {
+            // Make sure this particular device supports video
+            if ((device as AnyObject).hasMediaType(AVMediaTypeVideo)) {
+                // Finally check the position and confirm we've got the back camera
+                if((device as AnyObject).position == AVCaptureDevicePosition.back) {
+                    captureDevice = device as? AVCaptureDevice
+                    if captureDevice != nil {
+                        print("Capture device found")
+                        beginSession()
+                    }
+                }
+            }
+        }
+        
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+    
+    func focusTo(value : Float) {
+        if let device = captureDevice {
+            try! device.lockForConfiguration()
+                device.setFocusModeLockedWithLensPosition(value, completionHandler: { (time) -> Void in
+                    //
+                })
+                device.unlockForConfiguration()
+            }
+        
+    }
+    
+    let screenWidth = UIScreen.main.bounds.size.width
+     func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        let anyTouch = touches.anyObject() as! UITouch
+        let touchPercent = anyTouch.location(in: self.view).x / screenWidth
+        focusTo(value: Float(touchPercent))
+    }
+    
+     func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        let anyTouch = touches.anyObject() as! UITouch
+        let touchPercent = anyTouch.location(in: self.view).x / screenWidth
+        focusTo(value: Float(touchPercent))
+    }
+    
+    func configureDevice() {
+        if let device = captureDevice {
+            try! device.lockForConfiguration()
+            device.focusMode = .locked
+            device.unlockForConfiguration()
+        }
+        
+    }
+    
+    func beginSession() {
+        
+        configureDevice()
+        
+        let err : NSError? = nil
+        var input = AVCaptureDeviceInput()
+        
+        input = try! AVCaptureDeviceInput(device: captureDevice)
+            
+        if err != nil {
+            print("error: \(err?.localizedDescription)")
+        }
+        
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        self.view.layer.addSublayer(previewLayer!)
+        previewLayer?.frame = self.view.layer.frame
+        captureSession.startRunning()
+        print("Session started")
+    }
+
+}

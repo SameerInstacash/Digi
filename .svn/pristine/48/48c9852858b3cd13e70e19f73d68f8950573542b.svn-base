@@ -1,0 +1,134 @@
+//
+//  ViewController.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 15/02/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+public extension UIDevice {
+    
+    var moName: String {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        
+        switch identifier {
+        case "iPod5,1":                                 return "iPod Touch 5"
+        case "iPod7,1":                                 return "iPod Touch 6"
+        case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
+        case "iPhone4,1":                               return "iPhone 4s"
+        case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
+        case "iPhone5,3", "iPhone5,4":                  return "iPhone 5c"
+        case "iPhone6,1", "iPhone6,2":                  return "iPhone 5s"
+        case "iPhone7,2":                               return "iPhone 6"
+        case "iPhone7,1":                               return "iPhone 6 Plus"
+        case "iPhone8,1":                               return "iPhone 6s"
+        case "iPhone8,2":                               return "iPhone 6s Plus"
+        case "iPhone9,1", "iPhone9,3":                  return "iPhone 7"
+        case "iPhone9,2", "iPhone9,4":                  return "iPhone 7 Plus"
+        case "iPhone8,4":                               return "iPhone SE"
+        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
+        case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad 3"
+        case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad 4"
+        case "iPad4,1", "iPad4,2", "iPad4,3":           return "iPad Air"
+        case "iPad5,3", "iPad5,4":                      return "iPad Air 2"
+        case "iPad2,5", "iPad2,6", "iPad2,7":           return "iPad Mini"
+        case "iPad4,4", "iPad4,5", "iPad4,6":           return "iPad Mini 2"
+        case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad Mini 3"
+        case "iPad5,1", "iPad5,2":                      return "iPad Mini 4"
+        case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":return "iPad Pro"
+        case "AppleTV5,3":                              return "Apple TV"
+        case "i386", "x86_64":                          return "Simulator"
+        default:                                        return identifier
+        }
+    }
+}
+
+
+
+class ViewController: UIViewController {
+    
+    
+
+    @IBOutlet weak var imeiLabel: UILabel!
+    @IBOutlet weak var findStoreBtn: UIButton!
+    @IBOutlet weak var scanQRBtn: UIButton!
+    var responseData = " "
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scanQRBtn.layer.cornerRadius = 6
+        findStoreBtn.layer.cornerRadius = 6
+        let uuid = UUID().uuidString
+        imeiLabel.text = uuid
+        var request = URLRequest(url: URL(string: "http://smartex.zerowaste.co.in/store/api/v1/public/userSmartCode")!)
+        request.httpMethod = "POST"
+//        let mName = UIDevice.current.modelName
+        let modelCapacity = getTotalSize()
+//        let model =  "\(mName)"
+        let postString = "IMEINumber=865800022196205&device=A0001;One;One&memory=\(modelCapacity)&userName=planetm&apiKey=fd9a42ed13c8b8a27b5ead10d054caaf"
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            } else{
+                let responseString = String(data: data, encoding: .utf8)
+                self.responseData = responseString!
+                print("response = \(responseString)")
+            }
+            
+            
+        }
+        task.resume()
+
+    }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let smartExMainVC:SmartExMainVC = segue.destination as! SmartExMainVC
+        smartExMainVC.stringPassed = responseData
+//        navigationController?.pushViewController(smartExMainVC, animated: true)
+    }
+    
+    func getTotalSize() -> Int64{
+        var space: Int64 = 0
+        do {
+            let systemAttributes = try FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
+            space = ((systemAttributes[FileAttributeKey.systemSize] as? NSNumber)?.int64Value)!
+            space = space/1000000000
+            if space<8{
+                space = 8
+            } else if space<16{
+                space = 16
+            } else if space<32{
+                space = 32
+            } else if space<64{
+                space = 64
+            } else if space<128{
+                space = 128
+            } else if space<256{
+                space = 256
+            }
+        } catch {
+            space = 0
+        }
+        return space
+    }
+
+
+   
+}
+

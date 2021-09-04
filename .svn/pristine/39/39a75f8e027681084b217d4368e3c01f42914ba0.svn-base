@@ -1,0 +1,15 @@
+PODS:
+  - JPSVolumeButtonHandler (1.0.3)
+  - PopupDialog (0.5.4)
+
+DEPENDENCIES:
+  - JPSVolumeButtonHandler
+  - PopupDialog (~> 0.5)
+
+SPEC CHECKSUMS:
+  JPSVolumeButtonHandler: 2fc1b1f98b4e5e741688c0fcffc4808bdf81a424
+  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
+
+PODFILE CHECKSUM: 824e63b943589e0c264aab88074a5099afd35b85
+
+COCOAPODS: 1.2.0

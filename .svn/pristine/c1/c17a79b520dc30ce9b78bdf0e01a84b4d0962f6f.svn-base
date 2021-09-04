@@ -1,0 +1,42 @@
+//
+//  DeviceChargerVC.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 20/03/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+import PopupDialog
+
+class DeviceChargerVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+
+    var imagePicker: UIImagePickerController!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UIDevice.current.isBatteryMonitoringEnabled = true
+        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryStateDidChange), name: NSNotification.Name.UIDeviceBatteryStateDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryLevelDidChange), name: NSNotification.Name.UIDeviceBatteryLevelDidChange, object: nil)
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func batteryStateDidChange(notification: NSNotification){
+        // The stage did change: plugged, unplugged, full charge...
+        print("Device plugged in.")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CameraVC") as! CameraViewController
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
+    
+    
+    func batteryLevelDidChange(notification: NSNotification){
+        // The battery's level did change (98%, 99%, ...)
+    }
+    
+}

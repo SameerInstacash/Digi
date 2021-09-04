@@ -1,0 +1,52 @@
+//
+//  AutoRotationVC.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 20/03/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+
+class AutoRotationVC: UIViewController {
+
+    @IBOutlet weak var PortraitText: UILabel!
+    @IBOutlet weak var LandscapeText: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        LandscapeText.isHidden = true
+        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+       func rotated()
+    {
+        if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation))
+        {
+            print("landscape")
+            LandscapeText.isHidden = false
+            PortraitText.isHidden = true
+
+        }
+        
+        if(UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        {
+            print("Portrait")
+            LandscapeText.isHidden = true
+            PortraitText.isHidden = false
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "EarphoneVC") as! EarphoneJackVC
+            self.present(vc, animated: true, completion: nil)
+           // let vc = self.storyboard?.instantiateViewController(withIdentifier: "CameraVC") as! CameraViewController
+            //self.present(vc, animated: true, completion: nil)
+        }
+        
+    }
+
+   
+}

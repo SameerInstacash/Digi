@@ -1,0 +1,64 @@
+//
+//  EarphoneJackVC.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 20/03/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+
+class EarphoneJackVC: UIViewController {
+    let session = AVAudioSession.sharedInstance()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let currentRoute = self.session.currentRoute
+        if currentRoute.outputs.count != 0 {
+            for description in currentRoute.outputs {
+                if description.portType == AVAudioSessionPortHeadphones {
+                    print("headphone plugged in")
+                    
+                } else {
+                    print("headphone pulled out")
+                }
+            }
+        } else {
+            print("requires connection to device")
+        }
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.audioRouteChangeListener),
+            name: NSNotification.Name.AVAudioSessionRouteChange,
+            object: nil)
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    dynamic private func audioRouteChangeListener(notification:NSNotification) {
+        let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
+        
+        switch audioRouteChangeReason {
+        case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+            print("headphone plugged in")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChargerVC") as! DeviceChargerVC
+            self.present(vc, animated: true, completion: nil)
+            break
+        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+            print("headphone pulled out")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChargerVC") as! DeviceChargerVC
+            self.present(vc, animated: true, completion: nil)
+            break
+        default:
+            break
+        }
+    }
+
+}

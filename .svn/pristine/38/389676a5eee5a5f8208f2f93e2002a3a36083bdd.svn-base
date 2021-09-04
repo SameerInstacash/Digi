@@ -1,0 +1,96 @@
+//
+//  VolumeRockerVC.swift
+//  SmartExchange
+//
+//  Created by Abhimanyu Saraswat on 19/03/17.
+//  Copyright © 2017 ZeroWaste. All rights reserved.
+//
+
+import UIKit
+import JPSVolumeButtonHandler
+
+
+class VolumeRockerVC: UIViewController {
+
+    @IBOutlet weak var volumeDownDone: UILabel!
+    @IBOutlet weak var volumeUpDone: UILabel!
+    
+    var volDown = false
+    var volUp = false
+    private var volumeButtonHandler: JPSVolumeButtonHandler?
+    
+    var action: (() -> Void) = {} {
+        didSet {
+            // Is the handler already there, that is, is this module already in use?..
+            if let handler = volumeButtonHandler {
+                // ..If so, then add the action to the handler right away.
+                handler.upBlock = action
+                handler.downBlock = action
+            }
+            // Otherwise, just save the action here and see it added when the handler is created when the module goes into use (isInUse = true).
+        }
+    }
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        volumeUpDone.isHidden = true
+        volumeDownDone.isHidden = true
+        
+        
+        
+        volumeButtonHandler = JPSVolumeButtonHandler(
+            up: {
+                print("Volume up pressed")
+                self.volUp = true
+                self.volumeUpDone.isHidden = false
+                if(self.volDown == true){
+                    print("Volume test passed")
+                    self.tearDown()
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "RotationVC") as! AutoRotationVC
+                    self.present(vc, animated: true, completion: nil)
+                }
+                self.action()
+            }, downBlock: {
+                
+                self.volumeDownDone.isHidden = false
+                self.volDown = true
+                if(self.volUp == true){
+                    print("Volume test passed")
+                    self.tearDown()
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "RotationVC") as! AutoRotationVC
+                    self.present(vc, animated: true, completion: nil)
+                }
+                self.action()
+        })
+     
+        let handler = volumeButtonHandler
+        handler!.start(true)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    func tearDown() {
+        if let handler = volumeButtonHandler {
+            handler.stop()
+            volumeButtonHandler = nil
+        }
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
