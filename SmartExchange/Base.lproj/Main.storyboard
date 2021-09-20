@@ -587,10 +587,10 @@
                                     <constraint firstAttribute="height" constant="100" id="dpL-nx-RN3"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lzu-Mh-6pw">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lzu-Mh-6pw">
                                 <rect key="frame" x="16" y="555" width="343" height="54"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUX-G7-3ll" customClass="BEMCheckBox">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUX-G7-3ll" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I hearby acknowledge that I have read, understand and  agree to the Terms and Conditions." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-qQ-YZj">
@@ -659,7 +659,7 @@
                                     <action selector="continuebtnclicked:" destination="N2n-U0-Rcp" eventType="touchUpInside" id="gNd-Wu-xW7"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-vO-Pnu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-vO-Pnu">
                                 <rect key="frame" x="16" y="105" width="343" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">1. You are required to sign a new Phone Freedom 365 contract with Digi, as part of this Device Upgrade exercise.
@@ -3965,6 +3965,14 @@
             <point key="canvasLocation" x="12452" y="136"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="bUX-G7-3ll">
+            <size key="intrinsicContentSize" width="343" height="54"/>
+        </designable>
+        <designable name="nKp-Gw-F9h">
+            <size key="intrinsicContentSize" width="50" height="50"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="N8A-Wk-sPR"/>
     </inferredMetricsTieBreakers>

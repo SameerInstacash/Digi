@@ -151,8 +151,75 @@ class FingerprintViewController: UIViewController {
                 let yourImage: UIImage = UIImage(named: "face-id")!
                 self.biometricImage.image = yourImage
             }
+        }else {
+            
+            DispatchQueue.main.async {
+                
+                let alertController = UIAlertController (title: "Enable Biometric" , message: "Go to Settings -> Touch ID & Passcode", preferredStyle: .alert)
+                
+                let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+                    
+                    guard let settingsUrl = URL(string: "App-Prefs:root") else {
+                        return
+                    }
+                    
+                    if UIApplication.shared.canOpenURL(settingsUrl) {
+                        if #available(iOS 10.0, *) {
+                            
+                            UIApplication.shared.open(settingsUrl, options: [:]) { (success) in
+                                
+                            }
+                            
+                        } else {
+                            // Fallback on earlier versions
+                            
+                            UIApplication.shared.openURL(settingsUrl)
+                        }
+                    }
+                }
+                
+                alertController.addAction(settingsAction)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (_) -> Void in
+                    
+                    UserDefaults.standard.set(false, forKey: "fingerprint")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "InternalVC") as! InternalTestsVC
+                    self.resultJSON["Fingerprint Scanner"].int = 0
+                    vc.resultJSON = self.resultJSON
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true, completion: nil)
+                    
+                }
+                
+                alertController.addAction(cancelAction)
+                
+                alertController.popoverPresentationController?.sourceView = self.view
+                alertController.popoverPresentationController?.sourceRect = self.view.bounds
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+            }
+            
+        
+            //*
+            switch UIDevice.current.moName {
+            case "iPhone X","iPhone XR","iPhone XS","iPhone XS Max","iPhone 11","iPhone 11 Pro","iPhone 11 Pro Max","iPhone 12 mini","iPhone 12","iPhone 12 Pro","iPhone 12 Pro Max", "iPhone 13 Mini", "iPhone 13", "iPhone 13 Pro", "iPhone 13 Pro Max", "iPad Pro (11-inch) (1st generation)", "iPad Pro (11-inch) (2nd generation)", "iPad Pro (12.9-inch) (3rd generation)", "iPad Pro (12.9-inch) (4th generation)" :
+                
+                print("hello faceid available")
+                // device supports face id recognition.
+                
+                let yourImage: UIImage = UIImage(named: "face-id")!
+                self.biometricImage.image = yourImage
+                
+                break
+            default:
+                
+                break
+            }
+            //*/
+                                
         }
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
