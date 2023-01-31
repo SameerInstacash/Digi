@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ql7-e4-cA0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ql7-e4-cA0">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -307,10 +307,10 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-6H-yCb">
-                                <rect key="frame" x="16" y="88" width="343" height="48"/>
+                                <rect key="frame" x="16" y="88" width="343" height="38.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flawless or Minor Scratches" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-VV-Ahx">
-                                        <rect key="frame" x="0.0" y="0.0" width="162" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="38.5"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="162" id="pfb-VC-cXZ"/>
@@ -320,7 +320,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Noticable Scratches, Cracked or Dented   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jA-d8-yPe">
-                                        <rect key="frame" x="180" y="0.0" width="163" height="48"/>
+                                        <rect key="frame" x="180" y="0.0" width="163" height="38.5"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -344,7 +344,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Samples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMR-aC-RwA">
-                                <rect key="frame" x="198" y="144" width="161" height="29"/>
+                                <rect key="frame" x="198" y="134.5" width="161" height="29"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Bov-RU-gSY"/>
@@ -587,10 +587,10 @@
                                     <constraint firstAttribute="height" constant="100" id="dpL-nx-RN3"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lzu-Mh-6pw">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lzu-Mh-6pw">
                                 <rect key="frame" x="16" y="555" width="343" height="54"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUX-G7-3ll" customClass="BEMCheckBox">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUX-G7-3ll" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I hearby acknowledge that I have read, understand and  agree to the Terms and Conditions." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-qQ-YZj">
@@ -659,7 +659,7 @@
                                     <action selector="continuebtnclicked:" destination="N2n-U0-Rcp" eventType="touchUpInside" id="gNd-Wu-xW7"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-vO-Pnu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-vO-Pnu">
                                 <rect key="frame" x="16" y="105" width="343" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">1. You are required to sign a new Phone Freedom 365 contract with Digi, as part of this Device Upgrade exercise.
@@ -1311,7 +1311,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pij-te-UFd">
-                                        <rect key="frame" x="0.0" y="24.5" width="343" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="343" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pij-te-UFd" id="FG5-b3-cPF">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
@@ -3700,7 +3700,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TextBoxCell" rowHeight="52" id="dOg-RT-e95" customClass="TextBoxCell" customModule="SmartExchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="355" height="52"/>
+                                        <rect key="frame" x="0.0" y="50" width="355" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOg-RT-e95" id="uQ7-Tt-Vnd">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="52"/>
@@ -3747,7 +3747,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HtmlCell" rowHeight="168" id="OC3-TW-z1x" customClass="HtmlCell" customModule="SmartExchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76.5" width="355" height="168"/>
+                                        <rect key="frame" x="0.0" y="102" width="355" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OC3-TW-z1x" id="9aG-TC-eIY">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="168"/>
@@ -3781,7 +3781,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectTextCell" rowHeight="52" id="HDs-bg-jnh" customClass="SelectTextCell" customModule="SmartExchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="244.5" width="355" height="52"/>
+                                        <rect key="frame" x="0.0" y="270" width="355" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HDs-bg-jnh" id="eSb-of-nl4">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="52"/>
@@ -3828,7 +3828,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MobileNumberCell" rowHeight="212" id="tlS-Ry-WfY" customClass="MobileNumberCell" customModule="SmartExchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="296.5" width="355" height="212"/>
+                                        <rect key="frame" x="0.0" y="322" width="355" height="212"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tlS-Ry-WfY" id="ovX-DW-GJU">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="212"/>
@@ -3965,14 +3965,6 @@
             <point key="canvasLocation" x="12452" y="136"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="bUX-G7-3ll">
-            <size key="intrinsicContentSize" width="343" height="54"/>
-        </designable>
-        <designable name="nKp-Gw-F9h">
-            <size key="intrinsicContentSize" width="50" height="50"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="N8A-Wk-sPR"/>
     </inferredMetricsTieBreakers>
@@ -4013,7 +4005,7 @@
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

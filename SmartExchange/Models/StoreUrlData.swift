@@ -48,7 +48,14 @@ class StoreUrlData: NSObject {
         
         ref.observeSingleEvent(of: .value, with: { snapshot in
             
-            if !snapshot.exists() { return }
+            if !snapshot.exists() {
+                
+                //MARK: 31/1/23 Ajay told to handle this
+                completion([])
+                print("Firebase DB limit Reached 1 !!")
+                return
+            }
+            
             let tempArr = snapshot.value as! NSArray
             var storeList = [StoreUrlData]()
 
@@ -65,7 +72,12 @@ class StoreUrlData: NSObject {
                 completion(storeList)
             }
             
-        })
+        }) { (error) in
+            
+            //MARK: 31/1/23 Ajay told to handle this
+            completion([])
+            print("Firebase DB limit Reached 2 !!")
+        }
         
     }
     
@@ -95,7 +107,20 @@ class DigiStoreUrlData: NSObject {
         
         ref.observeSingleEvent(of: .value, with: { snapshot in
             
-            if !snapshot.exists() { return }
+            //if !snapshot.exists() { return }
+            
+            if !snapshot.exists() {
+                
+                //MARK: 31/1/23 Ajay told to handle this
+                let storeList = DigiStoreUrlData(digiStoreUrlDict: [:])
+                DispatchQueue.main.async {
+                    completion(storeList)
+                }
+                
+                print("Firebase DB limit Reached 1 !!")
+                return
+            }
+            
             let tempArr = snapshot.value as! [String:Any]
             
             let storeList = DigiStoreUrlData(digiStoreUrlDict: tempArr)
@@ -103,7 +128,16 @@ class DigiStoreUrlData: NSObject {
                 completion(storeList)
             }
             
-        })
+        }){ (error) in
+            
+            //MARK: 31/1/23 Ajay told to handle this
+            let storeList = DigiStoreUrlData(digiStoreUrlDict: [:])
+            DispatchQueue.main.async {
+                completion(storeList)
+            }
+            
+            print("Firebase DB limit Reached 2 !!")
+        }
         
     }
     
