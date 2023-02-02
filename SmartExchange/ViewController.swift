@@ -70,7 +70,8 @@ public extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
-        switch identifier {
+        //switch identifier {
+        switch identifier.replacingOccurrences(of: " ", with: "") {
         
         case "iPod5,1":                                 return "iPod touch (5th generation)"
         case "iPod7,1":                                 return "iPod touch (6th generation)"
