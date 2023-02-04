@@ -174,10 +174,11 @@ public extension UIDevice {
         case "AppleTV6,2":                              return "Apple TV 4K"
         case "AudioAccessory1,1":                       return "HomePod"
         case "AudioAccessory5,1":                       return "HomePod mini"
-        case "i386", "x86_64":                          return "iPad Pro (11-inch) (2nd generation)"
+        case "i386", "x86_64":                          return identifier
         default:                                        return identifier
         
         }
+        
     }
 }
 
@@ -241,6 +242,13 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     var endPoint = "http://exchange.getinstacash.in/store-asia/api/v1/public/"
     var storeToken: String = ""
     
+    var dictDigiStoreUrlDataHold = ["trade_in" : ["accept_tnc" : "I hereby acknowledge that I have read, understand and agree to the above terms and conditions.",
+                                                  "tnc" : "<html><body><style type=\"text/css\"> html, body { width:100%; margin: 0px; padding: 0px;} ol li{padding-bottom: 18px;} h3{text-align: center;}</style><h3> Terms and Conditions</h3><ol><li>1.By using this Digi Trade-In application (“Digi Trade-In App”), you (“Customer”) acknowledge and aware that you are the sole and rightful legal owner of this device. For the avoidance of doubt, Digi Telecommunications Sdn. Bhd. (“Digi”) has appointed CompAsia Sdn. Bhd. (“CompAsia”) as the third Party who will be responsible for the trade in program. If in any case the device is found to be lost, stolen or blacklisted, you will be liable to make a full refund of the device’s value within seven (7) working days, failing which, necessary legal actions will be taken without any reference made to you for which you shall be further liable to the necessary costs incurred.</li> <li>Information provided in the Digi Trade-In App is supplied by CompAsia. Please be aware that Digi make no representation on the market value of the traded device or the price that you might be able to obtain elsewhere</li> <li>In respect of the third party content provided in the Digi Trade-In App, you acknowledge and agree that your participation to the Programme and/ or download, access or use of the Digi Trade-In App shall be subject to, and you shall review, accept and comply with, such terms and conditions (including any end user licence agreements) as may be applicable to such third party content (including contents from CompAsia) as contained in Digi Trade-in App (“Third Party Contents”)</li> <li>You shall be solely responsible for any provision or submission of information by or on behalf of you on or through Digi Trade-In App and you further acknowledge and agree that Digi shall not be responsible to the Third-Party Contents or functionality of the Third-Party Contents as contained in Digi Trade-In App.</li><li>We do not warrant the continuity, uninterruptible and/or error-free of the buy-back and trade-in service operated and managed by CompAsia under the Programme and we expressly disclaim any representations or warranties of title, non-infringement, merchantability, usage, fitness or technical function in relation to the Digi Trade-In App</li> <li>Upon the handover of device, the ownership of the device shall be transferred to CompAsia with immediate effect and cannot be returned to the Customer for any reason.</li><li>You shall perform a factory reset on the device and remove any personal locks (e.g., Apple ID, Find My iPhone, Samsung Account, Google Account) before handover of device.</li><li>Any remaining data in the device shall be considered destroyed and cannot be recovered.</li><li>You declare that the said device has not been lost or stolen, was not purchased with government funds, and is not government’s property. No trade value shall be accorded to any device reported as lost or stolen, purchased with government funds, or is constituted as the government’s property.</li><li>The condition, specifications, and other representations that you have provided with regards to the said device are true and accurate.</li><li>You shall be responsible to ensure that the SIM card/ memory card has been removed before handover of device.</li><li>You agree and acknowledge that device’s quoted value offered on the website shall be subject to the CompAsia’s assessment, evaluation and discretion.</li></ol></body></html>"],
+                                    
+                                    "trade_up" : ["accept_tnc" : "I hereby acknowledge that I have read, understand and agree to the above terms and conditions.",
+                                                  "tnc" : "<html><body><style type=\"text/css\"> html, body { width:100%; margin: 0px; padding: 0px;} ol li{padding-bottom: 18px;} h3{text-align: center;} </style><h3>Terms and Conditions</h3><ol><li>You are required to sign a new Phone Freedom 365 contract with Digi, as part of this Device Upgrade exercise.</li> <li>You are the legal owner of this device. If the device is found to be lost, stolen or blacklisted, you will be liable to make a full refund of the device’s value within seven (7) working days, failing which, necessary legal actions will be taken without any reference made to you for which you shall be further liable to the necessary costs incurred.</li> <li>Upon the handover of device, the ownership of the device shall be transferred to Digi with immediate effect and cannot be returned to the customer for any reason.</li> <li>You shall perform a factory reset on the device and remove any personal locks (e.g. Apple ID, Find My iPhone, Samsung Account, Google Account) before handover of device.</li><li>Any remaining data in the device shall be considered destroyed and cannot be recovered.</li> <li>You declare that the said device has not been lost or stolen, was not purchased with government funds, and is not government’s property. No trade value shall be afforded to any device reported as lost or stolen, purchased with government funds, or is constituted as the government’s property.</li><li>The condition, specifications, and other representations that you have provided with regards to the said device are true and accurate.</li><li>You shall be responsible to ensure that the SIM card/ memory card has been removed before handover of device.</li><li>You agree and acknowledge that device’s quoted value offered on the website shall be subject to the Company’s assessment, evaluation and discretion.</li></ol></body></html>"]
+            ] 
+    
     override func viewDidLoad() {
         self.setStatusBarColor()
         
@@ -288,8 +296,19 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
                     self.arrStoreUrlData = storeData
                     
                     DigiStoreUrlData.fetchDigiStoreUrlsFromFireBase(isInterNet: true, getController: self) { digiStoreData in
-                        
-                        self.dictDigiStoreUrlData = digiStoreData
+    
+                        if (digiStoreData.dictTradeIn.count > 0) && (digiStoreData.dictTradeUp.count > 0) {
+                            
+                            self.dictDigiStoreUrlData = digiStoreData
+                            
+                        }else {
+                            
+                            let tempArr = self.dictDigiStoreUrlDataHold as [String:Any]
+                            let storeList = DigiStoreUrlData(digiStoreUrlDict: tempArr)
+                          
+                            self.dictDigiStoreUrlData = storeList
+                        }
+                                               
                         
                     }
                     
@@ -299,6 +318,12 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
                     
                     self.arrStoreUrlData = []
                     print("No Data Found")
+                    
+                    
+                    let tempArr = self.dictDigiStoreUrlDataHold as [String:Any]
+                    let storeList = DigiStoreUrlData(digiStoreUrlDict: tempArr)
+                  
+                    self.dictDigiStoreUrlData = storeList
                     
                     
                     /*
@@ -510,9 +535,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 //    }
     
     func verifyUserSmartCode() {
-        
-        
-        
+                
         self.hud.textLabel.text = ""
         self.hud.backgroundColor = #colorLiteral(red: 0.06274510175, green: 0, blue: 0.1921568662, alpha: 0.4)
         self.hud.show(in: self.view)
