@@ -72,112 +72,218 @@ public extension UIDevice {
         
         //switch identifier {
         switch identifier.replacingOccurrences(of: " ", with: "") {
-        
-        case "iPod5,1":                                 return "iPod touch (5th generation)"
-        case "iPod7,1":                                 return "iPod touch (6th generation)"
-        case "iPod9,1":                                 return "iPod touch (7th generation)"
             
-        case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
-        case "iPhone4,1":                               return "iPhone 4s"
-        case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
-        case "iPhone5,3", "iPhone5,4":                  return "iPhone 5c"
-        case "iPhone6,1", "iPhone6,2":                  return "iPhone 5s"
-        case "iPhone7,2":                               return "iPhone 6"
-        case "iPhone7,1":                               return "iPhone 6 Plus"
-        case "iPhone8,1":                               return "iPhone 6s"
-        case "iPhone8,2":                               return "iPhone 6s Plus"
-        case "iPhone8,4":                               return "iPhone SE"
-        case "iPhone9,1", "iPhone9,3":                  return "iPhone 7"
-        case "iPhone9,2", "iPhone9,4":                  return "iPhone 7 Plus"
-        case "iPhone10,1", "iPhone10,4":                return "iPhone 8"
-        case "iPhone10,2", "iPhone10,5":                return "iPhone 8 Plus"
-        case "iPhone10,3", "iPhone10,6":                return "iPhone X"
-        case "iPhone11,2":                              return "iPhone XS"
-        case "iPhone11,4", "iPhone11,6":                return "iPhone XS Max"
-        case "iPhone11,8":                              return "iPhone XR"
-        case "iPhone12,1":                              return "iPhone 11"
-        case "iPhone12,3":                              return "iPhone 11 Pro"
-        case "iPhone12,5":                              return "iPhone 11 Pro Max"
-        case "iPhone12,8":                              return "iPhone SE (2nd generation)"
-        case "iPhone13,1":                              return "iPhone 12 mini"
-        case "iPhone13,2":                              return "iPhone 12"
-        case "iPhone13,3":                              return "iPhone 12 Pro"
-        case "iPhone13,4":                              return "iPhone 12 Pro Max"
+            //MARK: iPhone
+            case "iPhone1,1":                               return "iPhone"
+            case "iPhone1,2":                               return "iPhone 3G"
+            case "iPhone2,1":                               return "iPhone 3GS"
+                
+            case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
+            case "iPhone4,1":                               return "iPhone 4s"
+                
+            case "iPhone5,1", "iPhone5,2":                  return "iPhone 5"
+            case "iPhone5,3", "iPhone5,4":                  return "iPhone 5c"
+            case "iPhone6,1", "iPhone6,2":                  return "iPhone 5s"
+                
+            case "iPhone7,2":                               return "iPhone 6"
+            case "iPhone7,1":                               return "iPhone 6 Plus"
+            case "iPhone8,1":                               return "iPhone 6s"
+            case "iPhone8,2":                               return "iPhone 6s Plus"
+                
+            case "iPhone8,4":                               return "iPhone SE"
+                
+            case "iPhone9,1", "iPhone9,3":                  return "iPhone 7"
+            case "iPhone9,2", "iPhone9,4":                  return "iPhone 7 Plus"
+                
+            case "iPhone10,1", "iPhone10,4":                return "iPhone 8"
+            case "iPhone10,2", "iPhone10,5":                return "iPhone 8 Plus"
+                
+            case "iPhone10,3", "iPhone10,6":                return "iPhone X"
+            case "iPhone11,2":                              return "iPhone XS"
+            case "iPhone11,4", "iPhone11,6":                return "iPhone XS Max"
+            case "iPhone11,8":                              return "iPhone XR"
+                
+            case "iPhone12,1":                              return "iPhone 11"
+            case "iPhone12,3":                              return "iPhone 11 Pro"
+            case "iPhone12,5":                              return "iPhone 11 Pro Max"
+            case "iPhone12,8":                              return "iPhone SE (2nd generation)"
+                
+            case "iPhone13,1":                              return "iPhone 12 mini"
+            case "iPhone13,2":                              return "iPhone 12"
+            case "iPhone13,3":                              return "iPhone 12 Pro"
+            case "iPhone13,4":                              return "iPhone 12 Pro Max"
+                
+            case "iPhone14,4":                              return "iPhone 13 Mini"
+            case "iPhone14,5":                              return "iPhone 13"
+            case "iPhone14,2":                              return "iPhone 13 Pro"
+            case "iPhone14,3":                              return "iPhone 13 Pro Max"
+                
+            case "iPhone14,6":                              return "iPhone SE 3rd Gen"
+                
+            case "iPhone14,7":                              return "iPhone 14"
+            case "iPhone14,8":                              return "iPhone 14 Plus"
+            case "iPhone15,2":                              return "iPhone 14 Pro"
+            case "iPhone15,3":                              return "iPhone 14 Pro Max"
+                
+                
+            //MARK: iPod
+            case "iPod1,1" :                                return "1st Gen iPod"
+            case "iPod2,1" :                                return "2nd Gen iPod"
+            case "iPod3,1" :                                return "3rd Gen iPod"
+            case "iPod4,1" :                                return "4th Gen iPod"
+            case "iPod5,1" :                                return "5th Gen iPod"
+            case "iPod7,1" :                                return "6th Gen iPod"
+            case "iPod9,1" :                                return "7th Gen iPod"
             
-        case "iPhone14,4":                              return "iPhone 13 Mini"
-        case "iPhone14,5":                              return "iPhone 13"
-        case "iPhone14,2":                              return "iPhone 13 Pro"
-        case "iPhone14,3":                              return "iPhone 13 Pro Max"
-            
-        case "iPhone14,6":                              return "iPhone SE 3rd Gen"
-            
-        case "iPhone14,7":                              return "iPhone 14"
-        case "iPhone14,8":                              return "iPhone 14 Plus"
-        case "iPhone15,2":                              return "iPhone 14 Pro"
-        case "iPhone15,3":                              return "iPhone 14 Pro Max"
-            
-            
-        //iPad
-        case "iPad1,1", "iPad1,2":                      return "iPad (1st generation)"
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad (2nd generation)"
-        case "iPad3,1", "iPad3,2", "iPad3,3":           return "iPad (3rd generation)"
-        case "iPad3,4", "iPad3,5", "iPad3,6":           return "iPad (4th generation)"
-        case "iPad6,11", "iPad6,12":                    return "iPad (5th generation)"
-        case "iPad7,5", "iPad7,6":                      return "iPad (6th generation)"
-        case "iPad7,11", "iPad7,12":                    return "iPad (7th generation)"
-        case "iPad11,6", "iPad11,7":                    return "iPad (8th generation)"
-            
-        //iPad Air
-        case "iPad4,1", "iPad4,2", "iPad4,3":           return "iPad Air (1st generation)"
-        case "iPad5,3", "iPad5,4":                      return "iPad Air (2nd generation)"
-        case "iPad11,3", "iPad11,4":                    return "iPad Air (3rd generation)"
-        //case "iPad13,1", "iPad13,2":                    return "iPad Air (4th generation)"
-            
-        //iPad Mini
-        case "iPad2,5", "iPad2,6", "iPad2,7":           return "iPad mini (1st generation)"
-        case "iPad4,4", "iPad4,5", "iPad4,6":           return "iPad mini (2nd generation)"
-        case "iPad4,7", "iPad4,8", "iPad4,9":           return "iPad mini (3rd generation)"
-        case "iPad5,1", "iPad5,2":                      return "iPad mini (4th generation)"
-        case "iPad11,1", "iPad11,2":                    return "iPad mini (5th generation)"
-            
-        //iPad Pro
-        case "iPad6,3", "iPad6,4":                      return "iPad Pro (9.7-inch)"
-        case "iPad7,3", "iPad7,4":                      return "iPad Pro (10.5-inch)"
-        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro (11-inch) (1st generation)"
-        case "iPad8,9", "iPad8,10":                     return "iPad Pro (11-inch) (2nd generation)"
-            
-        case "iPad6,7", "iPad6,8":                      return "iPad Pro (12.9-inch) (1st generation)"
-        case "iPad7,1", "iPad7,2":                      return "iPad Pro (12.9-inch) (2nd generation)"
-        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro (12.9-inch) (3rd generation)"
-        case "iPad8,11", "iPad8,12":                    return "iPad Pro (12.9-inch) (4th generation)"
-            
-            //New iPads add on 6/10/22
-            case "iPad12,1":                    return "iPad 9th Gen (WiFi)"
-            case "iPad12,2":                    return "iPad 9th Gen (WiFi+Cellular)"
-            case "iPad14,1":                    return "iPad mini 6th Gen (WiFi)"
-            case "iPad14,2":                    return "iPad mini 6th Gen (WiFi+Cellular)"
-            case "iPad13,1":                    return "iPad Air 4th Gen (WiFi)"
-            case "iPad13,2":                    return "iPad Air 4th Gen (WiFi+Cellular)"
-            case "iPad13,4":                    return "iPad Pro 11 inch 5th Gen"
-            case "iPad13,5":                    return "iPad Pro 11 inch 5th Gen"
-            case "iPad13,6":                    return "iPad Pro 11 inch 5th Gen"
-            case "iPad13,7":                    return "iPad Pro 11 inch 5th Gen"
-            case "iPad13,8":                    return "iPad Pro 12.9 inch 5th Gen"
-            case "iPad13,9":                    return "iPad Pro 12.9 inch 5th Gen"
-            case "iPad13,10":                    return "iPad Pro 12.9 inch 5th Gen"
-            case "iPad13,11":                    return "iPad Pro 12.9 inch 5th Gen"
-            case "iPad13,16":                    return "iPad Air 5th Gen (WiFi)"
-            case "iPad13,17":                    return "iPad Air 5th Gen (WiFi+Cellular)"
-            
-        
-        case "AppleTV5,3":                              return "Apple TV"
-        case "AppleTV6,2":                              return "Apple TV 4K"
-        case "AudioAccessory1,1":                       return "HomePod"
-        case "AudioAccessory5,1":                       return "HomePod mini"
-        case "i386", "x86_64":                          return identifier
-        default:                                        return identifier
-        
-        }
+              
+            //MARK: iPad
+            case "iPad1,1", "iPad1,2":                      return "iPad (1st generation)"
+                
+            //case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad (2nd generation)"
+            case "iPad2,1" :                                return "2nd Gen iPad"
+            case "iPad2,2" :                                return "2nd Gen iPad GSM"
+            case "iPad2,3" :                                return "2nd Gen iPad CDMA"
+            case "iPad2,4" :                                return "2nd Gen iPad New Revision"
+                
+            //case "iPad3,1", "iPad3,2", "iPad3,3":         return "iPad (3rd generation)"
+            case "iPad3,1" :                                return "3rd Gen iPad"
+            case "iPad3,2" :                                return "3rd Gen iPad CDMA"
+            case "iPad3,3" :                                return "3rd Gen iPad GSM"
+                
+            //case "iPad3,4", "iPad3,5", "iPad3,6":         return "iPad (4th generation)"
+            case "iPad3,4" :                                return "4th Gen iPad"
+            case "iPad3,5" :                                return "4th Gen iPad GSM+LTE"
+            case "iPad3,6" :                                return "4th Gen iPad CDMA+LTE"
+                
+            //case "iPad6,11", "iPad6,12":                  return "iPad (5th generation)"
+            case "iPad6,11" :                               return "iPad (2017) (5th generation)"
+            case "iPad6,12" :                               return "iPad (2017) (5th generation)"
+                
+            //case "iPad7,5", "iPad7,6":                    return "iPad (6th generation)"
+            case "iPad7,5" :                                return "iPad 6th Gen (WiFi)"
+            case "iPad7,6" :                                return "iPad 6th Gen (WiFi+Cellular)"
+                
+            //case "iPad7,11", "iPad7,12":                  return "iPad (7th generation)"
+            case "iPad7,11" :                               return "iPad 7th Gen (10.2-inch) (WiFi)"
+            case "iPad7,12" :                               return "iPad 7th Gen (10.2-inch) (WiFi+Cellular)"
+                
+            //case "iPad11,6", "iPad11,7":                  return "iPad (8th generation)"
+            case "iPad11,6" :                               return "iPad 8th Gen (WiFi)"
+            case "iPad11,7" :                               return "iPad 8th Gen (WiFi+Cellular)"
+                
+            //MARK: iPad Air
+            //case "iPad4,1", "iPad4,2", "iPad4,3":         return "iPad Air (1st generation)"
+            case "iPad4,1" :                                return "1st Gen iPad Air (WiFi)"
+            case "iPad4,2" :                                return "1st Gen iPad Air (GSM+CDMA)"
+            case "iPad4,3" :                                return "1st Gen iPad Air (China)"
+                
+            //case "iPad5,3", "iPad5,4":                    return "iPad Air (2nd generation)"
+            case "iPad5,3" :                                return "iPad Air 2 (WiFi) (2nd generation)"
+            case "iPad5,4" :                                return "iPad Air 2 (Cellular) (2nd generation)"
+                
+            //case "iPad11,3", "iPad11,4":                  return "iPad Air (3rd generation)"
+            case "iPad11,3" :                               return "iPad Air 3rd Gen (WiFi)"
+            case "iPad11,4" :                               return "iPad Air 3rd Gen"
+                
+            //MARK: iPad Mini
+            //case "iPad2,5", "iPad2,6", "iPad2,7":         return "iPad mini (1st generation)"
+            case "iPad2,5" :                                return  "iPad mini (1st generation)"
+            case "iPad2,6" :                                return  "iPad mini GSM+LTE (1st generation)"
+            case "iPad2,7" :                                return  "iPad mini CDMA+LTE (1st generation)"
+                
+            //case "iPad4,4", "iPad4,5", "iPad4,6":         return "iPad mini (2nd generation)"
+            case "iPad4,4" :                                return "iPad mini Retina (WiFi) (2nd generation)"
+            case "iPad4,5" :                                return "iPad mini Retina (GSM+CDMA) (2nd generation)"
+            case "iPad4,6" :                                return "iPad mini Retina (China) (2nd generation)"
+                
+            //case "iPad4,7", "iPad4,8", "iPad4,9":         return "iPad mini (3rd generation)"
+            case "iPad4,7" :                                return "iPad mini 3 (WiFi) (3rd generation)"
+            case "iPad4,8" :                                return "iPad mini 3 (GSM+CDMA) (3rd generation)"
+            case "iPad4,9" :                                return "iPad Mini 3 (China) (3rd generation)"
+                
+            //case "iPad5,1", "iPad5,2":                    return "iPad mini (4th generation)"
+            case "iPad5,1" :                                return "iPad mini 4 (WiFi) (4th generation)"
+            case "iPad5,2" :                                return "4th Gen iPad mini (WiFi+Cellular) (4th generation)"
+                
+            //case "iPad11,1", "iPad11,2":                  return "iPad mini (5th generation)"
+            case "iPad11,1" :                               return "iPad mini 5th Gen (WiFi)"
+            case "iPad11,2" :                               return "iPad mini 5th Gen"
+                
+            //MARK: iPad Pro
+            //case "iPad6,3", "iPad6,4":                    return "iPad Pro (9.7-inch)"
+            case "iPad6,3" :                                return "iPad Pro (9.7 inch, WiFi)"
+            case "iPad6,4" :                                return "iPad Pro (9.7 inch, WiFi+LTE)"
+                
+            //case "iPad7,3", "iPad7,4":                    return "iPad Pro (10.5-inch)"
+            case "iPad7,3" :                                return "iPad Pro (10.5-inch) 2nd Gen"
+            case "iPad7,4" :                                return "iPad Pro (10.5-inch) 2nd Gen"
+                
+            //case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro (11-inch) (1st generation)"
+            case "iPad8,1" :                                return "iPad Pro (11-inch) 3rd Gen (WiFi)"
+            case "iPad8,2" :                                return "iPad Pro (11-inch) 3rd Gen (1TB, WiFi)"
+            case "iPad8,3" :                                return "iPad Pro (11-inch) 3rd Gen (WiFi+Cellular)"
+            case "iPad8,4" :                                return "iPad Pro (11-inch) 3rd Gen (1TB, WiFi+Cellular)"
+                
+            //case "iPad8,9", "iPad8,10":                   return "iPad Pro (11-inch) (2nd generation)"
+            case "iPad8,9" :                                return "iPad Pro (11-inch) 4th Gen (WiFi)"
+            case "iPad8,10" :                               return "iPad Pro (11-inch) 4th Gen (WiFi+Cellular)"
+                
+            //case "iPad6,7", "iPad6,8":                    return "iPad Pro (12.9-inch) (1st generation)"
+            case "iPad6,7" :                                return "iPad Pro (12.9-inch), WiFi) (1st generation)"
+            case "iPad6,8" :                                return "iPad Pro (12.9-inch), WiFi+LTE) (1st generation)"
+                
+            //case "iPad7,1", "iPad7,2":                    return "iPad Pro (12.9-inch) (2nd generation)"
+            case "iPad7,1" :                                return "iPad Pro (12.9-inch) 2nd Gen (WiFi)"
+            case "iPad7,2" :                                return "iPad Pro (12.9-inch) 2nd Gen (WiFi+Cellular)"
+                
+            //case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro (12.9-inch) (3rd generation)"
+            case "iPad8,5" :                                return "iPad Pro (12.9-inch) 3rd Gen (WiFi)"
+            case "iPad8,6" :                                return "iPad Pro (12.9-inch) 3rd Gen (1TB, WiFi)"
+            case "iPad8,7" :                                return "iPad Pro (12.9-inch) 3rd Gen (WiFi+Cellular)"
+            case "iPad8,8" :                                return "iPad Pro (12.9-inch) 3rd Gen (1TB, WiFi+Cellular)"
+                
+            //case "iPad8,11", "iPad8,12":                  return "iPad Pro (12.9-inch) (4th generation)"
+            case "iPad8,11" :                               return "iPad Pro (12.9-inch) 4th Gen (WiFi)"
+            case "iPad8,12" :                               return "iPad Pro (12.9-inch) 4th Gen (WiFi+Cellular)"
+                
+            //MARK: New iPads add on 6/10/22
+            case "iPad12,1":                                return "iPad 9th Gen (WiFi)"
+            case "iPad12,2":                                return "iPad 9th Gen (WiFi+Cellular)"
+                
+            case "iPad14,1":                                return "iPad mini 6th Gen (WiFi)"
+            case "iPad14,2":                                return "iPad mini 6th Gen (WiFi+Cellular)"
+                
+            //case "iPad13,1", "iPad13,2":                  return "iPad Air (4th generation)"
+            case "iPad13,1":                                return "iPad Air 4th Gen (WiFi)"
+            case "iPad13,2":                                return "iPad Air 4th Gen (WiFi+Cellular)"
+                
+            case "iPad13,4":                                return "iPad Pro (11-inch) 5th Gen"
+            case "iPad13,5":                                return "iPad Pro (11-inch) 5th Gen"
+                
+            case "iPad13,6":                                return "iPad Pro (11-inch) 5th Gen"
+            case "iPad13,7":                                return "iPad Pro (11-inch) 5th Gen"
+                
+            case "iPad13,8":                                return "iPad Pro (12.9-inch) 5th Gen"
+            case "iPad13,9":                                return "iPad Pro (12.9-inch) 5th Gen"
+                
+            case "iPad13,10":                               return "iPad Pro (12.9-inch) 5th Gen"
+            case "iPad13,11":                               return "iPad Pro (12.9-inch) 5th Gen"
+                
+            case "iPad13,16":                               return "iPad Air 5th Gen (WiFi)"
+            case "iPad13,17":                               return "iPad Air 5th Gen (WiFi+Cellular)"
+                
+            case "iPad13,18" :                              return "iPad 10th Gen"
+            case "iPad13,19" :                              return "iPad 10th Gen"
+                
+            case "iPad14,3" :                               return "iPad Pro (11-inch) 4th Gen"
+            case "iPad14,4" :                               return "iPad Pro (11-inch) 4th Gen"
+            case "iPad14,5" :                               return "iPad Pro (12.9-inch) 6th Gen"
+            case "iPad14,6" :                               return "iPad Pro (12.9-inch) 6th Gen"
+                
+            case "i386", "x86_64", "arm64":                 return identifier
+            default:                                        return identifier
+                
+            }
         
     }
 }
